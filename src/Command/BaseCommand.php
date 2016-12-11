@@ -1,5 +1,5 @@
 <?php
-namespace Mikopet\DoctrineDataManager\Command;
+namespace Mikopet\DoctrineDataManagerBundle\Command;
 
 use Doctrine\ORM\EntityManager;
 use hanneskod\classtools\Iterator\ClassIterator;

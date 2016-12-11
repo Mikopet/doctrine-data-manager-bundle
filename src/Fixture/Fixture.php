@@ -1,11 +1,11 @@
 <?php
-namespace Mikopet\DoctrineDataManager;
+namespace Mikopet\DoctrineDataManagerBundle\Fixture;
 
 use Symfony\Component\Yaml\Yaml;
 
 class Fixture
 {
-    const FIXTURE_PATH = __DIR__ . '/../fixtures/';
+    const FIXTURE_PATH = __DIR__ . '/../../fixtures/';
 
     /**
      * @param   string $fixture

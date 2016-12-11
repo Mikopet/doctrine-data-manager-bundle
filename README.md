@@ -6,7 +6,7 @@ This version do only YAML dump and load, but feel free to contribute more, if ne
 
 ### Installation
 ```console
-$ composer require-dev mikopet/doctrine-data-manager-bundle
+$ composer require mikopet/doctrine-data-manager-bundle --dev
 ```
 And register it in AppKernel
 ```php
@@ -15,6 +15,12 @@ And register it in AppKernel
             $bundles[] = new Mikopet\DoctrineDataManagerBundle\DoctrineDataManagerBundle();
             // ...
         }
+```
+Then we need only configure the commands:
+```yaml
+# app/config/config.yml
+imports:
+    - { resource: "@DoctrineDataManagerBundle/Resources/config/services.yml" }
 ```
 
 ### Use

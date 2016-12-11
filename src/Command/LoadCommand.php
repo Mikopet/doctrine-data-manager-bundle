@@ -1,7 +1,7 @@
 <?php
-namespace Mikopet\DoctrineDataManager\Command;
+namespace Mikopet\DoctrineDataManagerBundle\Command;
 
-use Mikopet\DoctrineDataManager\Fixture;
+use Mikopet\DoctrineDataManagerBundle\Fixture\Fixture;
 
 class LoadCommand extends BaseCommand
 {

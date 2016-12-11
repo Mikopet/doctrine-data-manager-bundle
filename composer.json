@@ -1,10 +1,10 @@
 {
-    "name": "mikopet/doctrine-data-manager",
+    "name": "mikopet/doctrine-data-manager-bundle",
     "description": "A package to dump and load data from/to DB across Doctrine Entities",
     "type" : "symfony-bundle",
     "version": "0.0.0",
     "keywords": ["doctrine", "data", "database", "load", "dump", "entity"],
-    "homepage": "https://github.com/Mikopet/doctrine-data-manager",
+    "homepage": "https://github.com/Mikopet/doctrine-data-manager-bundle",
     "license": "MIT",
     "authors": [
         {"name": "Mikola Péter", "email": "mikopet@gmail.com"}
@@ -24,6 +24,6 @@
         "phpunit/phpunit": "*"
     },
     "autoload": {
-        "psr-4": {"Mikopet\\DoctrineDataManager\\": "src/"}
+        "psr-4": {"Mikopet\\DoctrineDataManagerBundle\\": "src/"}
     }
 }

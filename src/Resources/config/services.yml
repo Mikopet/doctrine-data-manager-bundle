@@ -1,0 +1,20 @@
+services:
+    doctrine.data.manager.dump:
+        class: Mikopet\DoctrineDataManagerBundle\Command\DumpCommand
+        arguments:
+            - "@doctrine.orm.entity_manager"
+            - "dump"
+        tags:
+            - { name: console.command }
+        properties:
+            finder: Symfony\Component\Finder\Finder
+
+    doctrine.data.manager.load:
+        class: Mikopet\DoctrineDataManagerBundle\Command\LoadCommand
+        arguments:
+            - "@doctrine.orm.entity_manager"
+            - "load"
+        tags:
+            - { name: console.command }
+        properties:
+            finder: Symfony\Component\Finder\Finder

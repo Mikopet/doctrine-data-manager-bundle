@@ -1,8 +1,8 @@
 <?php
 
-namespace DoctrineDataManager\Tests;
+namespace Mikopet\DoctrineDataManagerBundle\Tests;
 
-use DoctrineDataManager\Fixture;
+use Mikopet\DoctrineDataManagerBundle\Fixture\Fixture;
 use PHPUnit\Framework\TestCase;
 
 class FixtureTest extends TestCase
