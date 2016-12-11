@@ -1,0 +1,29 @@
+{
+    "name": "mikopet/doctrine-data-manager",
+    "description": "A package to dump and load data from/to DB across Doctrine Entities",
+    "type" : "symfony-bundle",
+    "version": "0.0.0",
+    "keywords": ["doctrine", "data", "database", "load", "dump", "entity"],
+    "homepage": "https://github.com/Mikopet/doctrine-data-manager",
+    "license": "MIT",
+    "authors": [
+        {"name": "Mikola Péter", "email": "mikopet@gmail.com"}
+    ],
+    "require": {
+        "php": "^5.5 || ^7.0",
+
+        "doctrine/orm": "*",
+        "hanneskod/classtools": "^1.1",
+        "symfony/yaml": "*",
+        "symfony/console" : "^2.8 || ^3",
+        "symfony/framework-bundle" : "*",
+        "symfony/serializer": "*"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "*",
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {"Mikopet\\DoctrineDataManager\\": "src/"}
+    }
+}

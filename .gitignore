@@ -1,0 +1,6 @@
+vendor/
+.idea/
+/fixtures/*
+!fixtures/.gitkeep
+composer.lock
+phpunit.xml
