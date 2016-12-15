@@ -2,7 +2,7 @@
 Easily dumps data from DB or loads to DB across Doctrine Entities
 This version do only YAML dump and load, but feel free to contribute more, if needed
 
-`Tested only with symfony3+ and php7!`
+`Tested only with symfony3+ and php5.6!`
 
 ### Installation
 ```console
@@ -15,12 +15,6 @@ And register it in AppKernel
             $bundles[] = new Mikopet\DoctrineDataManagerBundle\DoctrineDataManagerBundle();
             // ...
         }
-```
-Then we need only configure the commands:
-```yaml
-# app/config/config.yml
-imports:
-    - { resource: "@DoctrineDataManagerBundle/Resources/config/services.yml" }
 ```
 
 ### Use

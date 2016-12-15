@@ -5,7 +5,7 @@ use Symfony\Component\Yaml\Yaml;
 
 class Fixture
 {
-    const FIXTURE_PATH = __DIR__ . '/../../fixtures/';
+    const FIXTURE_PATH = 'fixtures/';
 
     /**
      * @param   string $fixture
@@ -23,6 +23,10 @@ class Fixture
      */
     private static function save($fixture, $data)
     {
+        if (!is_dir(self::FIXTURE_PATH)) {
+            mkdir(self::FIXTURE_PATH);
+        }
+
         return (bool)file_put_contents(self::FIXTURE_PATH . $fixture . '.yml', Yaml::dump($data));
     }
 
